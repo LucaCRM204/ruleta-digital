@@ -1358,8 +1358,8 @@
 
         async function enviarAlCRM(premio) {
             document.getElementById('crm-status').style.display = 'block';
-            const esVW = formData.marca === 'volkswagen';
-            const crmUrl = esVW ? CRM_VW : CRM_MULTIMARCA;
+            // Todos al mismo CRM
+            const crmUrl = CRM_MULTIMARCA;
             let notas = `🎰 LEAD RULETA DIGITAL\nPremio: ${premio.nombre}\nMarca: ${formData.marca.toUpperCase()}\nModelo: ${formData.modeloNombre}`;
             if (formData.tieneAuto) notas += `\n¿Tiene auto?: ${formData.tieneAuto}`;
             if (formData.comoConocio) notas += `\nCómo nos conoció: ${formData.comoConocio}`;
@@ -1383,7 +1383,7 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(leadData)
                 });
-                console.log(`Lead enviado a ${esVW ? 'CRM VW' : 'CRM Multimarca'}`);
+                console.log("Lead enviado a CRM Multimarca");
                 document.getElementById('crm-status').style.display = 'none';
                 document.getElementById('crm-success').style.display = 'block';
             } catch (error) {
