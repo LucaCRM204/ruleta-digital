@@ -1200,18 +1200,22 @@
         };
 
         const PREMIOS = [
-            { id: 1, nombre: "ESTADÍA EN BARILOCHE", color: "#1a1a2e", probabilidad: 2, emoji: "🏔️", destacado: true },
-            { id: 2, nombre: "SUSCRIPCIÓN SIN CARGO", color: "#c23a3a", probabilidad: 5, emoji: "📋", destacado: false },
-            { id: 3, nombre: "LLAVERO", color: "#d4a14a", probabilidad: 20, emoji: "🔑", destacado: false },
-            { id: 4, nombre: "LAPICERA", color: "#3d8b6e", probabilidad: 20, emoji: "✏️", destacado: false },
-            { id: 5, nombre: "SEGUÍ PARTICIPANDO", color: "#1a1a2e", probabilidad: 15, emoji: "🎯", destacado: false },
-            { id: 6, nombre: "12 CUOTAS ¡BONIFICADAS!", color: "#3a7bc2", probabilidad: 3, emoji: "💰", destacado: true },
-            { id: 7, nombre: "¡TIRA DE NUEVO!", color: "#8b5cf6", probabilidad: 10, emoji: "🔄", destacado: false },
-            { id: 8, nombre: "SEGUÍ PARTICIPANDO", color: "#1a1a2e", probabilidad: 10, emoji: "🎯", destacado: false },
-            { id: 9, nombre: "$1.000.000 DE DESCUENTO", color: "#2d2d2d", probabilidad: 3, emoji: "🎉", destacado: true },
-            { id: 10, nombre: "GASTOS DE RETIRO ¡BONIFICADO!", color: "#e07b39", probabilidad: 5, emoji: "🚗", destacado: true },
-            { id: 11, nombre: "SEGUÍ PARTICIPANDO", color: "#c23a3a", probabilidad: 5, emoji: "🎯", destacado: false },
-            { id: 12, nombre: "LLAVERO", color: "#d4a14a", probabilidad: 2, emoji: "🔑", destacado: false },
+            // PROBABILIDADES CONFIGURADAS:
+            // - Estadía Bariloche: 1 en 100,000 (0.001%)
+            // - Seguí participando: 1 en 5 (20% total = ~6.67% cada uno)
+            // - Resto: parejo (~10% cada uno)
+            { id: 1, nombre: "ESTADÍA EN BARILOCHE", color: "#1a1a2e", probabilidad: 1, emoji: "🏔️", destacado: true },
+            { id: 2, nombre: "SUSCRIPCIÓN SIN CARGO", color: "#c23a3a", probabilidad: 10000, emoji: "📋", destacado: false },
+            { id: 3, nombre: "LLAVERO", color: "#d4a14a", probabilidad: 10000, emoji: "🔑", destacado: false },
+            { id: 4, nombre: "LAPICERA", color: "#3d8b6e", probabilidad: 10000, emoji: "✏️", destacado: false },
+            { id: 5, nombre: "SEGUÍ PARTICIPANDO", color: "#1a1a2e", probabilidad: 6666, emoji: "🎯", destacado: false },
+            { id: 6, nombre: "12 CUOTAS ¡BONIFICADAS!", color: "#3a7bc2", probabilidad: 10000, emoji: "💰", destacado: true },
+            { id: 7, nombre: "¡TIRA DE NUEVO!", color: "#8b5cf6", probabilidad: 10000, emoji: "🔄", destacado: false },
+            { id: 8, nombre: "SEGUÍ PARTICIPANDO", color: "#1a1a2e", probabilidad: 6667, emoji: "🎯", destacado: false },
+            { id: 9, nombre: "$1.000.000 DE DESCUENTO", color: "#2d2d2d", probabilidad: 10000, emoji: "🎉", destacado: true },
+            { id: 10, nombre: "GASTOS DE RETIRO ¡BONIFICADO!", color: "#e07b39", probabilidad: 10000, emoji: "🚗", destacado: true },
+            { id: 11, nombre: "SEGUÍ PARTICIPANDO", color: "#c23a3a", probabilidad: 6666, emoji: "🎯", destacado: false },
+            { id: 12, nombre: "LLAVERO", color: "#d4a14a", probabilidad: 10000, emoji: "🔑", destacado: false },
         ];
 
         let formData = {};
