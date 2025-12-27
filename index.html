@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Alra - Promoción Exclusiva | Girá la Ruleta y Ganá</title>
-    <meta name="description" content="Participá de nuestra promoción exclusiva. Girá la ruleta y ganá increíbles premios: viajes, descuentos y más. Grupo Alra - Volkswagen, Fiat, Peugeot, Renault.">
+    <title>GoldPlan - Promoción Exclusiva | Girá la Ruleta y Ganá</title>
+    <meta name="description" content="Participá de nuestra promoción exclusiva. Girá la ruleta y ganá increíbles premios: viajes, descuentos y más. GoldPlan - Tu plan de ahorro automotor.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,11 @@
     
     <style>
         :root {
-            --color-primary: #001e50;
-            --color-primary-light: #003380;
-            --color-gold: #d4a853;
-            --color-gold-light: #e8c87a;
-            --color-gold-dark: #b8923e;
+            --color-primary: #1a1a1a;
+            --color-primary-light: #2d2d2d;
+            --color-gold: #c9a227;
+            --color-gold-light: #d4b445;
+            --color-gold-dark: #a68619;
             --color-white: #ffffff;
             --color-cream: #faf8f5;
             --color-gray-100: #f5f5f5;
@@ -31,7 +31,7 @@
             --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
             --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
             --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
-            --shadow-gold: 0 8px 30px rgba(212,168,83,0.3);
+            --shadow-gold: 0 8px 30px rgba(201,162,39,0.3);
         }
 
         * {
@@ -52,9 +52,6 @@
             overflow-x: hidden;
         }
 
-        /* ============================================
-           UTILITIES
-           ============================================ */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -64,9 +61,7 @@
         .text-gold { color: var(--color-gold); }
         .text-primary { color: var(--color-primary); }
 
-        /* ============================================
-           HEADER / NAVIGATION
-           ============================================ */
+        /* HEADER */
         .header {
             position: fixed;
             top: 0;
@@ -75,7 +70,7 @@
             z-index: 1000;
             background: rgba(255,255,255,0.95);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0,30,80,0.08);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
             transition: all 0.3s ease;
         }
 
@@ -87,70 +82,25 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 16px 0;
+            padding: 12px 0;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 12px;
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-gold);
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.1;
-        }
-
-        .logo-grupo {
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--color-gold-dark);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .logo-alra {
-            font-family: var(--font-display);
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-primary);
+        .logo-img {
+            height: 50px;
+            width: auto;
         }
 
         .header-cta {
             display: flex;
             align-items: center;
             gap: 20px;
-        }
-
-        .header-phone {
-            display: none;
-            align-items: center;
-            gap: 8px;
-            color: var(--color-gray-600);
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .header-phone svg {
-            width: 18px;
-            height: 18px;
-            color: var(--color-gold);
         }
 
         .btn {
@@ -177,7 +127,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(212,168,83,0.4);
+            box-shadow: 0 12px 35px rgba(201,162,39,0.4);
         }
 
         .btn-secondary {
@@ -206,16 +156,14 @@
             font-size: 16px;
         }
 
-        /* ============================================
-           HERO SECTION
-           ============================================ */
+        /* HERO */
         .hero {
             position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 120px 0 80px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, #002a6b 50%, var(--color-primary) 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
             overflow: hidden;
         }
 
@@ -227,8 +175,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(212,168,83,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(212,168,83,0.1) 0%, transparent 40%),
+                radial-gradient(circle at 20% 50%, rgba(201,162,39,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(201,162,39,0.1) 0%, transparent 40%),
                 radial-gradient(circle at 60% 80%, rgba(255,255,255,0.05) 0%, transparent 30%);
             pointer-events: none;
         }
@@ -261,8 +209,8 @@
             align-items: center;
             gap: 8px;
             padding: 8px 16px;
-            background: rgba(212,168,83,0.2);
-            border: 1px solid rgba(212,168,83,0.3);
+            background: rgba(201,162,39,0.2);
+            border: 1px solid rgba(201,162,39,0.3);
             border-radius: 50px;
             font-size: 13px;
             font-weight: 600;
@@ -368,7 +316,7 @@
             transform: translate(-50%, -50%);
             width: 120%;
             height: 120%;
-            background: radial-gradient(circle, rgba(212,168,83,0.3) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(201,162,39,0.3) 0%, transparent 70%);
             filter: blur(40px);
             z-index: -1;
         }
@@ -388,9 +336,7 @@
             to { opacity: 1; transform: translateX(0); }
         }
 
-        /* ============================================
-           BRANDS SECTION
-           ============================================ */
+        /* BRANDS */
         .brands {
             padding: 60px 0;
             background: var(--color-white);
@@ -455,9 +401,7 @@
             color: var(--color-gray-800);
         }
 
-        /* ============================================
-           PRIZES SECTION
-           ============================================ */
+        /* PRIZES */
         .prizes {
             padding: 100px 0;
             background: var(--color-cream);
@@ -591,9 +535,7 @@
             line-height: 1.6;
         }
 
-        /* ============================================
-           HOW IT WORKS
-           ============================================ */
+        /* HOW IT WORKS */
         .how-it-works {
             padding: 100px 0;
             background: var(--color-white);
@@ -656,12 +598,10 @@
             margin: 0 auto;
         }
 
-        /* ============================================
-           TESTIMONIALS
-           ============================================ */
+        /* TESTIMONIALS */
         .testimonials {
             padding: 100px 0;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             position: relative;
             overflow: hidden;
         }
@@ -763,7 +703,7 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(212,168,83,0.15);
+            background: rgba(201,162,39,0.15);
             color: var(--color-gold-dark);
             font-size: 12px;
             font-weight: 600;
@@ -772,9 +712,7 @@
             margin-top: 8px;
         }
 
-        /* ============================================
-           FAQ SECTION
-           ============================================ */
+        /* FAQ */
         .faq {
             padding: 100px 0;
             background: var(--color-cream);
@@ -832,9 +770,7 @@
             padding-left: 40px;
         }
 
-        /* ============================================
-           CTA SECTION
-           ============================================ */
+        /* CTA */
         .cta {
             padding: 100px 0;
             background: var(--color-white);
@@ -842,7 +778,7 @@
         }
 
         .cta-card {
-            background: linear-gradient(135deg, var(--color-primary) 0%, #002a6b 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             border-radius: 32px;
             padding: 80px 40px;
             position: relative;
@@ -857,8 +793,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 0% 0%, rgba(212,168,83,0.2) 0%, transparent 50%),
-                radial-gradient(circle at 100% 100%, rgba(212,168,83,0.15) 0%, transparent 50%);
+                radial-gradient(circle at 0% 0%, rgba(201,162,39,0.2) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(201,162,39,0.15) 0%, transparent 50%);
         }
 
         .cta-content {
@@ -906,150 +842,43 @@
             color: rgba(255,255,255,0.6);
         }
 
-        /* ============================================
-           FOOTER
-           ============================================ */
+        .cta-note a {
+            color: var(--color-gold);
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
         .footer {
-            background: var(--color-black);
-            color: var(--color-white);
-            padding: 80px 0 40px;
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--color-cream);
+            border-top: 1px solid var(--color-gray-200);
         }
 
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 60px;
-        }
-
-        .footer-brand .logo {
-            margin-bottom: 20px;
-        }
-
-        .footer-brand .logo-icon {
-            background: var(--color-gold);
-            color: var(--color-primary);
-        }
-
-        .footer-brand .logo-grupo {
-            color: var(--color-gold);
-        }
-
-        .footer-brand .logo-alra {
-            color: var(--color-white);
-        }
-
-        .footer-description {
-            font-size: 15px;
-            color: rgba(255,255,255,0.6);
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .footer-social a {
-            width: 44px;
-            height: 44px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-size: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            background: var(--color-gold);
-            color: var(--color-primary);
-            transform: translateY(-3px);
-        }
-
-        .footer-column h4 {
+        .footer p {
             font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--color-gold);
-            margin-bottom: 24px;
+            color: var(--color-gray-600);
         }
 
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 14px;
-        }
-
-        .footer-column ul li a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-            font-size: 15px;
-            transition: all 0.3s ease;
-        }
-
-        .footer-column ul li a:hover {
-            color: var(--color-white);
-            padding-left: 5px;
-        }
-
-        .footer-contact-item {
+        .footer-links {
+            margin-top: 12px;
             display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-            color: rgba(255,255,255,0.6);
-            font-size: 15px;
-        }
-
-        .footer-contact-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--color-gold);
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .footer-bottom {
-            padding-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
         }
 
-        .footer-copy {
-            font-size: 14px;
-            color: rgba(255,255,255,0.5);
-        }
-
-        .footer-legal {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-legal a {
-            font-size: 14px;
-            color: rgba(255,255,255,0.5);
+        .footer-links a {
+            font-size: 13px;
+            color: var(--color-gray-600);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        .footer-legal a:hover {
-            color: var(--color-white);
+        .footer-links a:hover {
+            color: var(--color-gold);
         }
 
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
+        /* RESPONSIVE */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -1080,17 +909,9 @@
             .hero-stats {
                 justify-content: center;
             }
-            
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
         }
 
         @media (max-width: 768px) {
-            .header-phone {
-                display: none !important;
-            }
-            
             .hero {
                 padding: 100px 0 60px;
             }
@@ -1116,16 +937,6 @@
             
             .faq-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
             }
         }
 
@@ -1161,18 +972,10 @@
         <div class="container">
             <div class="header-inner">
                 <a href="#" class="logo">
-                    <div class="logo-icon">A</div>
-                    <div class="logo-text">
-                        <span class="logo-grupo">Grupo</span>
-                        <span class="logo-alra">Alra</span>
-                    </div>
+                    <img src="logo-goldplan.png" alt="GoldPlan" class="logo-img">
                 </a>
                 
                 <div class="header-cta">
-                    <div class="header-phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                        <span>0800-XXX-XXXX</span>
-                    </div>
                     <a href="ruleta.html" class="btn btn-primary">Participar Ahora</a>
                 </div>
             </div>
@@ -1217,27 +1020,24 @@
                     <div class="hero-wheel">
                         <div class="hero-wheel-glow"></div>
                         <svg class="hero-wheel-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Wheel background -->
                             <defs>
                                 <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#d4a853"/>
-                                    <stop offset="50%" style="stop-color:#e8c87a"/>
-                                    <stop offset="100%" style="stop-color:#b8923e"/>
+                                    <stop offset="0%" style="stop-color:#c9a227"/>
+                                    <stop offset="50%" style="stop-color:#d4b445"/>
+                                    <stop offset="100%" style="stop-color:#a68619"/>
                                 </linearGradient>
                                 <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
                                     <feDropShadow dx="0" dy="8" stdDeviation="15" flood-opacity="0.3"/>
                                 </filter>
                             </defs>
                             
-                            <!-- Outer ring -->
                             <circle cx="200" cy="200" r="190" fill="url(#goldGrad)" filter="url(#shadow)"/>
-                            <circle cx="200" cy="200" r="175" fill="#001e50"/>
+                            <circle cx="200" cy="200" r="175" fill="#1a1a1a"/>
                             
-                            <!-- Wheel segments -->
                             <g>
                                 <path d="M200,200 L200,30 A170,170 0 0,1 347,115 Z" fill="#1a1a2e"/>
                                 <path d="M200,200 L347,115 A170,170 0 0,1 370,200 Z" fill="#c23a3a"/>
-                                <path d="M200,200 L370,200 A170,170 0 0,1 347,285 Z" fill="#d4a14a"/>
+                                <path d="M200,200 L370,200 A170,170 0 0,1 347,285 Z" fill="#c9a227"/>
                                 <path d="M200,200 L347,285 A170,170 0 0,1 200,370 Z" fill="#3d8b6e"/>
                                 <path d="M200,200 L200,370 A170,170 0 0,1 53,285 Z" fill="#3a7bc2"/>
                                 <path d="M200,200 L53,285 A170,170 0 0,1 30,200 Z" fill="#8b5cf6"/>
@@ -1245,17 +1045,14 @@
                                 <path d="M200,200 L53,115 A170,170 0 0,1 200,30 Z" fill="#2d2d2d"/>
                             </g>
                             
-                            <!-- Center circle -->
                             <circle cx="200" cy="200" r="50" fill="white"/>
                             <circle cx="200" cy="200" r="45" fill="#f5f5f5"/>
-                            <text x="200" y="195" text-anchor="middle" fill="#666" font-size="12" font-weight="600" font-family="sans-serif">GRUPO</text>
-                            <text x="200" y="215" text-anchor="middle" fill="#001e50" font-size="20" font-weight="700" font-family="serif">Alra</text>
+                            <text x="200" y="195" text-anchor="middle" fill="#1a1a1a" font-size="11" font-weight="700" font-family="sans-serif">GOLD</text>
+                            <text x="200" y="215" text-anchor="middle" fill="#c9a227" font-size="16" font-weight="700" font-family="serif">Plan</text>
                             
-                            <!-- Pointer -->
                             <polygon points="200,15 185,50 215,50" fill="url(#goldGrad)" filter="url(#shadow)"/>
                             
-                            <!-- Decorative dots -->
-                            <g fill="#d4a853">
+                            <g fill="#c9a227">
                                 <circle cx="200" cy="30" r="5"/>
                                 <circle cx="347" cy="115" r="5"/>
                                 <circle cx="370" cy="200" r="5"/>
@@ -1276,7 +1073,7 @@
     <section class="brands">
         <div class="container">
             <div class="brands-inner">
-                <p class="brands-label">Concesionario oficial de</p>
+                <p class="brands-label">Trabajamos con las mejores marcas</p>
                 <div class="brands-grid">
                     <div class="brand-item">
                         <div class="brand-logo">🔵</div>
@@ -1404,12 +1201,12 @@
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"No lo podía creer cuando me tocó el descuento de $1.000.000. Lo usé para comprar mi Cronos y la verdad que fue una experiencia excelente. Super recomendable."</p>
+                    <p class="testimonial-text">"No lo podía creer cuando me tocó el descuento. Lo usé para comprar mi Cronos y la verdad que fue una experiencia excelente. Super recomendable participar."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">MG</div>
+                        <div class="testimonial-avatar">FA</div>
                         <div class="testimonial-info">
-                            <h4>Martín González</h4>
-                            <p>Buenos Aires</p>
+                            <h4>Facundo Ahumada</h4>
+                            <p>Pilar, Buenos Aires</p>
                             <span class="testimonial-prize">🎉 Ganó $1.000.000 de descuento</span>
                         </div>
                     </div>
@@ -1423,12 +1220,12 @@
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"Participé sin muchas expectativas y gané las 12 cuotas bonificadas. Me ayudó mucho para poder acceder a mi primer 0km. Muy agradecida con Grupo Alra."</p>
+                    <p class="testimonial-text">"Participé sin muchas expectativas y gané las 12 cuotas bonificadas. Me ayudó mucho para poder acceder a mi primer 0km. Muy agradecida con GoldPlan."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">LR</div>
+                        <div class="testimonial-avatar">MQ</div>
                         <div class="testimonial-info">
-                            <h4>Laura Rodríguez</h4>
-                            <p>Córdoba</p>
+                            <h4>Milagros Quiroga</h4>
+                            <p>Villa María, Córdoba</p>
                             <span class="testimonial-prize">💰 Ganó 12 cuotas bonificadas</span>
                         </div>
                     </div>
@@ -1442,12 +1239,12 @@
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="testimonial-text">"Excelente atención y el premio fue real. Gané los gastos de retiro bonificados y me ahorraron una buena plata. La concesionaria es muy seria y confiable."</p>
+                    <p class="testimonial-text">"Excelente atención y el premio fue real. Gané los gastos de retiro bonificados y me ahorraron una buena plata. La empresa es muy seria y confiable."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">CP</div>
+                        <div class="testimonial-avatar">RB</div>
                         <div class="testimonial-info">
-                            <h4>Carlos Pérez</h4>
-                            <p>Mendoza</p>
+                            <h4>Ramiro Bustamante</h4>
+                            <p>San Rafael, Mendoza</p>
                             <span class="testimonial-prize">🚗 Ganó gastos de retiro bonificados</span>
                         </div>
                     </div>
@@ -1485,17 +1282,17 @@
                 
                 <div class="faq-item">
                     <h3 class="faq-question">¿Cómo reclamo mi premio?</h3>
-                    <p class="faq-answer">Al ganar recibirás un código único. Contactanos por WhatsApp o teléfono mencionando ese código y coordinamos todo.</p>
+                    <p class="faq-answer">Al ganar recibirás un código único. Deberás presentar tu DNI (el mismo con el que participaste) para validar y retirar el premio.</p>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">¿Hasta cuándo puedo participar?</h3>
-                    <p class="faq-answer">La promoción tiene tiempo limitado. Te recomendamos participar ahora para no perder tu oportunidad.</p>
+                    <h3 class="faq-question">¿Quiénes pueden participar?</h3>
+                    <p class="faq-answer">Pueden participar todas las personas mayores de 18 años residentes en Argentina.</p>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">¿Quién es Grupo Alra?</h3>
-                    <p class="faq-answer">Somos concesionarios oficiales de Volkswagen, Fiat, Peugeot y Renault con más de 30 años de trayectoria en Argentina.</p>
+                    <h3 class="faq-question">¿Quién es GoldPlan?</h3>
+                    <p class="faq-answer">GoldPlan es tu aliado para acceder a tu 0km. Trabajamos con las mejores marcas: Volkswagen, Fiat, Peugeot y Renault.</p>
                 </div>
             </div>
         </div>
@@ -1514,23 +1311,22 @@
                     <a href="ruleta.html" class="btn btn-primary btn-lg">
                         🎯 ¡Quiero Participar Ahora!
                     </a>
-                    <p class="cta-note">Sin compromiso de compra. Premios sujetos a disponibilidad.</p>
+                    <p class="cta-note">Al participar aceptás los <a href="terminos.html">Términos y Condiciones</a>. Solo mayores de 18 años.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SIMPLE FOOTER -->
-    <footer style="text-align: center; padding: 30px 20px; background: var(--color-cream); border-top: 1px solid var(--color-gray-200);">
-        <p style="font-size: 14px; color: var(--color-gray-600);">© 2024 Grupo Alra - Volkswagen | Fiat | Peugeot | Renault</p>
-        <div style="margin-top: 12px; display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="font-size: 13px; color: var(--color-gray-600); text-decoration: none;">Términos y Condiciones</a>
-            <a href="#" style="font-size: 13px; color: var(--color-gray-600); text-decoration: none;">Política de Privacidad</a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 GoldPlan - Todos los derechos reservados</p>
+        <div class="footer-links">
+            <a href="terminos.html">Términos y Condiciones</a>
+            <a href="terminos.html#privacidad">Política de Privacidad</a>
         </div>
     </footer>
 
     <script>
-        // Header scroll effect
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -1540,7 +1336,6 @@
             }
         });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1554,7 +1349,6 @@
             });
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1569,7 +1363,6 @@
             });
         }, observerOptions);
 
-        // Animate elements on scroll
         document.querySelectorAll('.prize-card, .step-card, .testimonial-card, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
