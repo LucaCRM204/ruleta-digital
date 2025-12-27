@@ -1069,7 +1069,7 @@
 
                         <p class="terms">
                             Al participar aceptás los <a href="terminos.html" target="_blank" style="color: #c9a227;">Términos y Condiciones</a>.
-                            <br><strong>⚠️ Solo MAYORES DE 18 AÑOS. Una participación por DNI.</strong>
+                            <br><strong⚠️ Solo MAYORES DE 18 AÑOS. Una participación por DNI.</strong>
                             <br><small>El premio se reclama presentando el DNI con el que participaste.</small>
                         </p>
 
@@ -1704,11 +1704,21 @@
         async function enviarAlCRM(premio) {
             document.getElementById('crm-status').style.display = 'block';
             const crmUrl = CRM_MULTIMARCA;
-            let notas = `🎰 LEAD RULETA DIGITAL\nPremio: ${premio.nombre}\nMarca: ${formData.marca.toUpperCase()}\nModelo: ${formData.modeloNombre}`;
-            if (formData.tieneAuto) notas += `\n¿Tiene auto?: ${formData.tieneAuto}`;
-            if (formData.comoConocio) notas += `\nCómo nos conoció: ${formData.comoConocio}`;
-            if (formData.cuandoComprar) notas += `\nCuándo compra: ${formData.cuandoComprar}`;
-            if (formData.primer0km) notas += `\nPrimer 0km: ${formData.primer0km}`;
+            const codigoPremio = `GOLD-${formData.dni.slice(-4)}`;
+            let notas = `🎰 RULETA DIGITAL GOLDPLAN\n` +
+                        `━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+                        `🎫 CÓDIGO: ${codigoPremio}\n` +
+                        `🏆 Premio: ${premio.nombre}\n` +
+                        `━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+                        `🚗 Marca: ${formData.marca.toUpperCase()}\n` +
+                        `📋 Modelo: ${formData.modeloNombre}\n` +
+                        `🪪 DNI: ${formData.dni}`;
+            if (formData.tieneAuto) notas += `\n🚙 ¿Tiene auto?: ${formData.tieneAuto}`;
+            if (formData.comoConocio) notas += `\n📣 Cómo nos conoció: ${formData.comoConocio}`;
+            if (formData.cuandoComprar) notas += `\n📅 Cuándo compra: ${formData.cuandoComprar}`;
+            if (formData.primer0km) notas += `\n✨ Primer 0km: ${formData.primer0km}`;
+            notas += `\n━━━━━━━━━━━━━━━━━━━━━━━━\n⚠️ Verificar DNI al reclamar`;
+            
             const leadData = {
                 nombre: `${formData.nombre} ${formData.apellido}`,
                 telefono: formData.telefono,
@@ -1716,9 +1726,10 @@
                 dni: formData.dni,
                 modelo: formData.modeloNombre,
                 marca: formData.marca,
-                fuente: 'ruleta',
+                fuente: 'ruleta_digital',
                 notas: notas,
                 premio: premio.nombre,
+                codigoPremio: codigoPremio,
                 fecha: new Date().toISOString()
             };
             try {
