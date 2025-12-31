@@ -288,8 +288,16 @@
         }
 
         .marca-emoji {
-            font-size: clamp(24px, 6vw, 36px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 5px;
+        }
+
+        .marca-emoji img {
+            width: clamp(32px, 8vw, 45px);
+            height: clamp(32px, 8vw, 45px);
+            object-fit: contain;
         }
 
         .marca-option-name {
@@ -994,19 +1002,27 @@
                             <label>Elegí una marca *</label>
                             <div class="marca-selector">
                                 <div class="marca-option" data-marca="volkswagen">
-                                    <div class="marca-emoji">🔵</div>
+                                    <div class="marca-emoji">
+                                        <img src="logo-vw.png" alt="Volkswagen">
+                                    </div>
                                     <span class="marca-option-name">Volkswagen</span>
                                 </div>
                                 <div class="marca-option" data-marca="fiat">
-                                    <div class="marca-emoji">🔴</div>
+                                    <div class="marca-emoji">
+                                        <img src="logo-fiat.png" alt="Fiat">
+                                    </div>
                                     <span class="marca-option-name">Fiat</span>
                                 </div>
                                 <div class="marca-option" data-marca="peugeot">
-                                    <div class="marca-emoji">🦁</div>
+                                    <div class="marca-emoji">
+                                        <img src="logo-peugeot.png" alt="Peugeot">
+                                    </div>
                                     <span class="marca-option-name">Peugeot</span>
                                 </div>
                                 <div class="marca-option" data-marca="renault">
-                                    <div class="marca-emoji">💛</div>
+                                    <div class="marca-emoji">
+                                        <img src="logo-renault.png" alt="Renault">
+                                    </div>
                                     <span class="marca-option-name">Renault</span>
                                 </div>
                             </div>
@@ -1069,7 +1085,7 @@
 
                         <p class="terms">
                             Al participar aceptás los <a href="terminos.html" target="_blank" style="color: #c9a227;">Términos y Condiciones</a>.
-                            <br><strong⚠️ Solo MAYORES DE 18 AÑOS. Una participación por DNI.</strong>
+                            <br><strong>⚠️ Solo MAYORES DE 18 AÑOS. Una participación por DNI.</strong>
                             <br><small>El premio se reclama presentando el DNI con el que participaste.</small>
                         </p>
 
